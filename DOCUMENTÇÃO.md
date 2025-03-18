@@ -55,3 +55,11 @@
 [CONSULTA]
 
 [ENDEREÇO]
+
+/sistema
+/sistema/login
+/sistema/cadastro
+
+# Criar uma view que vai renderizar um arquivo chamado seunome.html
+# No seu nome.html coloque um h1 com o seu nome
+# Em seguida, crie um url chame esse arquivo seunome.html
