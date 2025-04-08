@@ -8,10 +8,4 @@ def index(request):
         'global/base.html',
     )
 
-def noah(request):
-    return render(
-        request, 
-        'seunome.html'
-    )
-
 # REQUEST - RESPONSE - RENDER

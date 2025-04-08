@@ -1,9 +1,14 @@
-# São as importações realizadas de forma a se utilizar partes do django
+# São as importações realizadas de forma a utilizar partes do django.
 from django.urls import path
+# Importação do diretório views, onde tem a view index e a view listarPacientes
 from sistema import views
-# Lista responsável por organizar as urls do sistema
+
+app_name = 'sistema'
+
+# Lista responsável por organizar as urls do sistema.
 urlpatterns = [
-    path ('noah/', views.noah),
+    path('', views.index, name='index'),
+    path('listar/', views.listarPacientes, name='listar'),
 ]
 
 # path() é um método do django que permite realizar a inserção de um url
