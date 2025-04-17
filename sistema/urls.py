@@ -9,7 +9,10 @@ app_name = 'sistema'
 urlpatterns = [
     path('', views.index, name='index'),
     path('listar/', views.listarPacientes, name='listar'),
-    path('medicos/', views.listarMedicos, name='listar')
+    path('pacientes/novo/', views.criarPaciente, name='criar_paciente'),
+    path('pacientes/perfil/<int:paciente_id>', views.perfilPaciente, name='perfil_paciente'),
+    path('medicos/', views.listarMedicos, name='listar'),
+    path('medicos/novo/', views.criarMedico, name='criar_medico')
 ]
 
 # path() é um método do django que permite realizar a inserção de um url
